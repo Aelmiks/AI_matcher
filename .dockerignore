@@ -1,0 +1,13 @@
+.git
+.env
+.env.*
+venv
+.venv
+AI_matcher
+output
+logs
+cache
+**/__pycache__
+**/.ipynb_checkpoints
+*.csv
+*.pkl

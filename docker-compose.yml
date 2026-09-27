@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  webdav-sync:
+    build:
+      context: .
+    container_name: webdav-sync
+    restart: always
+    env_file: .env
+    volumes:
+      - ./logs:/app/logs
+      - ./cache/.ignored_files.json:/app/.ignored_files.json
+      - ./cache/.synced_files.json:/app/.synced_files.json
